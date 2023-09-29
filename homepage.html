@@ -1,0 +1,191 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Home Page</title>
+</head>
+<body>
+    <div id="header">
+        <div class="dropdown">
+            <button class="link ddlink">
+                <img id="burger" src="https://peterwhitlock.info/menu_icon.png" alt="menu icon" />
+            </button>
+            <div class="ddmenu">
+                <a class="link" href="https://peterwhitlock.info/homepage.html/#about">
+                    About Me
+                </a>
+                <a class="link" href="https://peterwhitlock.info/homepage.html/#projects">
+                    My Projects
+                </a>
+                <a class="link" href="https://peterwhitlock.info/homepage.html/#contacts">
+                    Contact Me
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="pagelayout">
+        <div id="title">
+            <h1>
+                GAME
+            </h1>
+            <h1>
+                DESIGNER
+            </h1>
+            <p>
+                Portfolio by Peter Whitlock
+            </p>
+        </div>
+        <div class="segment" id="about">
+            <h2>
+                ABOUT ME
+            </h2>
+            <p>
+                I am a friendly and enthusiastic games design graduate from Bournemouth University looking for jobs
+                in games design, graphics and UI design, web development or other creative software industries.
+            </p>
+        </div>
+        <div class="segment" id="projects">
+            <h2>
+                MY PROJECTS
+            </h2>
+            <p>
+                Water World, Dissertation, Graphic Design (UI?), Web Design, Modelling and other skills.
+            </p>
+        </div>
+        <div class="segment" id="contacts">
+            <h2>
+                CONTACT ME
+            </h2>
+            <p>
+                Please feel free to contact me at any of the following places.
+                pwhitlock0279@gmail.com, 07375143381, linkedin.com/in/peterwhitlock
+            </p>
+        </div>
+    </div>
+    <div id="footer">
+        <a class="link" href="https://peterwhitlock.info/homepage.html/#header">
+            <img id="arrow" src="https://peterwhitlock.info/up_arrow.png" alt="return to top" />
+        </a>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+
+<style>
+    body {
+        background: white;
+        margin: 0;
+    }
+
+    p {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    h1 {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 600%;
+        margin: 0;
+        padding-right: 15vw;
+    }
+
+    h2 {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 400%;
+        margin: 0;
+    }
+
+
+    /*------------- classes -------------*/
+    .pagelayout {
+        display: grid;
+        grid-template-rows: auto;
+        margin: 0 auto;
+    }
+
+    .segment {
+        padding: 30vh 10vw;
+    }
+
+    .link {
+        text-decoration: none;
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-size: medium;
+        color: black;
+        padding: 0.25rem;
+    }
+
+        .link:hover {
+            color: grey;
+        }
+
+    .ddlink:hover + .ddmenu {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+    .ddmenu:hover {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+    .dropdown {
+        position: relative;
+    }
+
+    .ddmenu {
+        position: absolute;
+        right: 0.2rem;
+        display: none;
+    }
+
+
+    /*-------------- IDs ---------------*/
+    #header {
+        text-align: right;
+        margin: 0 1rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    #title {
+        display: grid;
+        place-content: center;
+        min-height: 100vh;
+        width: 75%;
+        margin: 0 auto;
+        padding: 0 2rem;
+    }
+
+    #about {
+        background: #30bced;
+    }
+
+    #projects {
+        background: #303036;
+        color: white;
+    }
+
+    #contacts {
+        background: white;
+    }
+
+    #burger {
+        width: 1.5rem;
+    }
+
+    #arrow {
+        width: 1.6rem;
+    }
+
+    #footer {
+        text-align: right;
+        margin: 0 1.5rem 1rem 0;
+    }
+</style>
+

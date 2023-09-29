@@ -2,60 +2,245 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <title></title>
+    <title>Home Page</title>
 </head>
 <body>
-    <div>
-        <p class="text" id="title">
-            Thank you for your interest!
-        </p>
-        <p class="text">
-            I am working hard to finish my portfolio,
-            in the mean time please feel free to visit
-            my LinkedIn page at the link below.
-        </p>
-        <p></p>
-        <a class="text link" href="https://www.linkedin.com/in/peterwhitlock">
-            Go to LinkedIn
+    <div id="splashscreen">
+        <div id="sstext">
+            <h2>
+                Thank you for your interest!
+            </h2>
+            <p>
+                I am working hard to finish my portfolio,
+                in the mean time please feel free to visit
+                my LinkedIn page at the link below.
+            </p>
+            <p></p>
+            <a class="link" id="linkedin" href="https://www.linkedin.com/in/peterwhitlock">
+                Go to LinkedIn
+            </a>
+            <a class="link" id="continue" href="https://peterwhitlock.info/homepage.html">
+                Continue anyway
+            </a>
+        </div>
+    </div>
+    <div id="header">
+        <div class="dropdown">
+            <button class="link ddlink">
+                <img id="burger" src="https://peterwhitlock.info/menu_icon.png" alt="menu icon" />
+            </button>
+            <div class="ddmenu">
+                <a class="link" href="https://peterwhitlock.info/homepage.html/#about">
+                    About Me
+                </a>
+                <a class="link" href="https://peterwhitlock.info/homepage.html/#projects">
+                    My Projects
+                </a>
+                <a class="link" href="https://peterwhitlock.info/homepage.html/#contacts">
+                    Contact Me
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="pagelayout">
+        <div id="title">
+            <h1>
+                GAME
+            </h1>
+            <h1>
+                DESIGNER
+            </h1>
+            <p>
+                Portfolio by Peter Whitlock
+            </p>
+        </div>
+        <div class="segment" id="about">
+            <h2>
+                ABOUT ME
+            </h2>
+            <p>
+                I am a friendly and enthusiastic games design graduate from Bournemouth University looking for jobs
+                in games design, graphics and UI design, web development or other creative software industries.
+            </p>
+        </div>
+        <div class="segment" id="projects">
+            <h2>
+                MY PROJECTS
+            </h2>
+            <p>
+                Water World, Dissertation, Graphic Design (UI?), Web Design, Modelling and other skills. 
+            </p>
+        </div>
+        <div class="segment" id="contacts">
+            <h2>
+                CONTACT ME
+            </h2>
+            <p>
+                Please feel free to contact me at any of the following places. 
+                pwhitlock0279@gmail.com, 07375143381, linkedin.com/in/peterwhitlock
+            </p>
+        </div>
+    </div>
+    <div id="footer">
+        <a class="link" href="https://peterwhitlock.info/homepage.html/#header">
+            <img id="arrow" src="https://peterwhitlock.info/up_arrow.png" alt="return to top"/>
         </a>
     </div>
 </body>
 </html>
 
+
+
+
+
+
+
 <style>
     body {
-        background: #121212;
+        background: white;
         margin: 0;
     }
 
-    div {
+    p {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    h1 {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 600%;
+        margin: 0;
+        padding-right: 15vw;
+    }
+
+    h2 {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 400%;
+        margin: 0;
+    }
+
+
+    /*------------- classes -------------*/
+    .pagelayout {
+        display: grid;
+        grid-template-rows: auto;
+        margin: 0 auto;
+    }
+
+    .segment {
+        padding: 30vh 10vw;
+    }
+
+    .link {
+        text-decoration: none;
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-size: medium;
+        color: black;
+        padding: 0.25rem;
+    }
+    .link:hover {
+        color: grey;
+    }
+
+    .ddlink:hover + .ddmenu {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+    .ddmenu:hover {
+        display: grid;
+        grid-template-columns: 100%;
+    }
+
+    .dropdown {
+        position: relative;
+    }
+
+    .ddmenu {
+        position: absolute;
+        right: 0.2rem;
+        display: none;
+    }
+
+
+    /*-------------- IDs ---------------*/
+    #header {
+        text-align: right;
+        margin: 0 1rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    #title {
         display: grid;
         place-content: center;
         min-height: 100vh;
         width: 75%;
         margin: 0 auto;
+        padding: 0 2rem;
     }
 
-    .text {
+    #about {
+        background: #30bced;
+    }
+    #projects {
+        background: #303036;
         color: white;
-        font-family: PingFang HK;
-        font-size: small;
-        text-align: center;
+    }
+    #contacts {
+        background: white;
     }
 
-    .link {
-        text-decoration: none;
-        background: linear-gradient(0.4turn, #0096ff, #210ba7);
-        padding: 0.2em 0.6em;
-        font-weight: bold;
-        font-size: medium;
+    #burger {
+        width: 1.5rem;
+    }
+    #arrow {
+        width: 1.6rem;
+    }
+
+    #footer {
+        text-align: right;
+        margin: 0 1.5rem 1rem 0;
+    }
+
+
+    /*---------- splashscreen ------------*/
+    #splashscreen {
+        position: fixed;
+        z-index: 20;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        background: #121212c0;
+        margin: 0;
+        width: 100vw;
+    }
+    #sstext {
+        display: grid;
+        place-content: center;
+        min-height: 100vh;
+        width: 75%;
         margin: 0 auto;
-        width: max-content;
-        border-radius: 5px;
+        color: white;
     }
-
-    #title {
-        font-size: xx-large;
+    #linkedin {
+        color: white;
+        background: linear-gradient(0.4turn, #0096ff, #210ba7);
+        padding: 0.2rem 0.6rem;
         font-weight: bold;
+        width: max-content;
+        border-radius: 0.5rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    #linkedin:hover {
+        padding: 0.3rem 0.8rem;
+    }
+    #continue {
+        color: white;
+        background: #202020;
+        padding: 0.2rem 0.6rem;
+        width: max-content;
+        border-radius: 0.5rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: small;
+        margin-top: 1rem;
     }
 </style>
