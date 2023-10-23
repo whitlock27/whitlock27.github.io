@@ -5,59 +5,82 @@
     <title>Peter's Portfolio</title>
 </head>
 <body>
-    <div id="header">
-        <div class="dropdown">
-            <button class="link ddlink">
-                <img id="burger" src="https://peterwhitlock.info/menu_icon.png" alt="menu icon" />
-            </button>
-            <div class="ddmenu">
-                <a class="link" href="#about">
-                    About Me
-                </a>
-                <a class="link" href="#unity">
-                    Unity Projects
-                </a>
-                <a class="link" href="#unreal">
-                    Unreal Projects
-                </a>
-                <a class="link" href="#design">
-                    Art & Design
-                </a>
-                <a class="link" href="#web">
-                    Web Design & More
-                </a>
-                <a class="link" href="#contacts">
-                    Contact Me
-                </a>
-            </div>
-        </div>
-    </div>
     <div class="pagelayout">
-        <div id="title">
-            <div></div>
-            <div>
-                <h1>
-                    GAME
-                </h1>
-                <h1>
-                    DEVELOPER
-                </h1>
-                <p>
-                    Portfolio by Peter Whitlock
-                </p>
+        <div class="blue">
+            <div id="header">
+                <div class="dropdown">
+                    <button class="link ddlink">
+                        <img id="burger" src="https://peterwhitlock.info/menu_icon.jpg" alt="menu icon" />
+                    </button>
+                    <div class="ddmenu">
+                        <a class="link" href="#about">
+                            About Me
+                        </a>
+                        <a class="link" href="#unity">
+                            Unity Projects
+                        </a>
+                        <a class="link" href="#unreal">
+                            Unreal Projects
+                        </a>
+                        <a class="link" href="#design">
+                            Art & Design
+                        </a>
+                        <a class="link" href="#web">
+                            Web Design & More
+                        </a>
+                        <a class="link" href="#contacts">
+                            Contact Me
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div></div>
+            <div id="title">
+                <div></div>
+                <div>
+                    <h1>
+                        GAME
+                    </h1>
+                    <h1>
+                        DEVELOPER
+                    </h1>
+                    <p>
+                        Portfolio by Peter Whitlock
+                    </p>
+                </div>
+                <div></div>
+            </div>
         </div>
-        <div class="segment blue" id="about">
+        <div class="segment" id="about">
             <h2>
                 ABOUT ME
             </h2>
             <div class="pialdiv">
                 <img class="projectimg" src="https://peterwhitlock.info/portrait.jpg" />
-                <p id="aboutpara">
-                    I am a friendly and enthusiastic games design graduate from Bournemouth University looking for jobs
-                    in games design, graphics and UI design, web development or other creative software industries.
-                </p>
+                <div id="aboutpara">
+                    <p>
+                        <span>Hi, I'm Peter!</span> Thank you for showing an interest in me and my work.
+                        I am a friendly, and passionate, <span>games design graduate</span> from Bournemouth University
+                        looking for full time employment in the Birmingham area.
+                    </p>
+                    <p>
+                        I enjoy <span>learning</span> new skills, being <span>creative</span>, and providing an <span>analytical</span> approach to complex problems.
+                        One of the many reasons I've fallen in love with games design, despite only more recently discovering
+                        an interest in playing video games, is because it's such a diverse industry where
+                        I can satisfy both my mathematical and artistic interests.
+                    </p>
+                    <p>
+                        In my spare time I enjoy hanging out with friends, listening to music and podcasts, as well as running and swimming.
+                        I've always enjoyed board games but, as mentioned, I've also been enjoy more video games which has help improve
+                        my understanding of the industry. I also have a <span>big interest in technology, history, and design</span>.
+                    </p>
+                    <p>
+                        Although games design, and especially UI design, is my top choice for the next step in my carrier,
+                        my skills and interests extend to all sorts of applications in <span>software development, web development,
+                        graphic design, 3D modelling</span>, and more.
+                        In this portfolio I hope to demonstrate some of the work I've done both as part of my university course
+                        and during my spare time that will support me in these industries.
+                    </p>
+                </div>
             </div>
         </div>
         <div class="segment grey" id="unity">
@@ -65,14 +88,14 @@
                 UNITY EXPERIENCE
             </h2>
             <p>
-                I have been developing my skills in unity since my first year at Uni and continue to use them in my own projects.
-                The 4 examples are from all 3 years at Uni plus something I've been working on in my own time recently.
+                Out of all the skills I have developed over the last few years, working in Unity and coding in <span>C# is one of my strongest</span>.
+                The 4 examples below are stretched throughout my time at university and beyond.
             </p>
             <p>
-                In first year we were tasked with coding the physics for a marble run in unity.
-                The project needed to include a number of unique parts, with one breaking the laws of physics.
-                Using C# and simple block elements, I created a complex system and added an "anthropomorphiser" which animated the marbles
-                to walk back to the start as my physics breaking component. I was happy to recieve a 1st grade for this work.
+                In first year we were tasked with creating a <span>marble run to teach us about Unity's physics engine</span>.
+                However, we also had to come up with and code a couple of fictitious physics components.
+                Along with a marble duplicator, I made an "anthropomorphiser" which added arms and legs to the marbles
+                and animated them to walk back to the start. I was happy to <span>receive a 1st</span> for this assignment.
             </p>
             <div class="pidiv">
                 <img class="projectimg" src="https://peterwhitlock.info/marblerun.jpg" />
@@ -80,7 +103,11 @@
             </div>
             <div class="spacer"></div>
             <p>
-                For Interface Design in second year I needed to create a 3D gem collection game and add an user interface to it.
+                For our interface design unit in second year we needed to create a stylistic <span>user interface for a 3D gem collection game</span>
+                we would need to code. We could use free assets for the project but I mainly made my UI from scratch
+                matching it to the dessert asset pack I used with an old western style theme.
+                I really enjoyed the project and the creativity it provided but looking back I would have liked to have spent more time
+                perfecting the user experience of my design and balancing that better with the aesthetic of it.
             </p>
             <div class="pidiv">
                 <img class="projectimg" src="https://peterwhitlock.info/editor_in_game.jpg" />
@@ -88,37 +115,41 @@
                 <img class="projectimg" src="https://peterwhitlock.info/editor_start_menu.jpg" />
                 <img class="projectimg" src="https://peterwhitlock.info/popup_menu.jpg" />
             </div>
+            <div class="spacer"></div>
             <p>
-                I used a combination of free 3D assets to create a dessert scene and matched the style of the UI with a 19th century American western theme.
-                As part of the assignment we were required to create a point and click movement system for the player
-                so I implemented a navmesh to achieve this.
+                In my final year, I decided to use <span>Unity for my dissertation</span> as I wanted to create a visually simple mobile game, instead,
+                focusing on the audio. I wanted to create a <span>3D augmented audio only game</span> that could be controlled with phone and headphone gestures
+                picked up by accelerometers and gyroscopes. Something that could be played in a real space with friends but relayed through audio.
+                Being able to be run on a regular phone improved the accessibility of the game and by removing the screens,
+                the game could lean on the face to face contact traditional games provide.
+            </p>
+            <p>
+                It was a great learning experience and really pushed my skills to attempt to invent a new style of game.
+                However, looking back I was a little <span>too ambitious</span> and struggled to complete the game in the time frame hurting my final grade.
+                Despite that, I don't regret my choice because it taught me a lot and I would rather push too far than not enough.
             </p>
             <div class="spacer"></div>
             <p>
-                For my dissertation, I chose to use unity as I wanted to create a mobile audio game.
-                Instead of doing the more practical variation, I chose to do a standard project which weighted my research and dissertation higher.
-            </p>
-            <div class="piardiv">
-                <img class="projectimg" src="https://peterwhitlock.info/dis_editor.jpg" />
-                <img class="projectimg" src="https://peterwhitlock.info/dis_menu.jpg" />
-            </div>
-            <div class="spacer"></div>
-            <p>
-                "Queenie" is my current project that I'm doing for fun in my space time.
-                It's a bee hive simulator/defense game where you can watch an army of bee's evolve.
+                Currently, I am making a game for fun in my spare time with unity called Queenie.
+                A bee hive simulator/tower defence game where you can guide and watch an army of bee's evolve.
             </p>
             <div class="pialdiv">
                 <img class="projectimg" src="https://peterwhitlock.info/queenie.jpg" />
                 <img class="projectimg" src="https://peterwhitlock.info/queenie_editor.jpg" />
             </div>
         </div>
-        <div class="segment" id="unreal">
+        <div class="segment blue" id="unreal">
             <h2>
                 UNREAL EXPERIENCE
             </h2>
             <p>
-                Although I feel most confident in unity, I have done a range of projects in unreal as well.
-                In first year for a Level Design unit I built an eery subway level.
+                Despite more of my experience being in Unity, I really enjoy working in Unreal and the power the engine provides.
+                Below are two examples of projects I worked on during my university course.
+            </p>
+            <p>
+                The first was for my <span class="spanalt">level design</span> unit where we were taught the basics of <span class="spanalt">working in Unreal and using Blueprints</span>
+                to add a number of interactive elements to our levels. I created a first person eery subway level where
+                I really enjoyed working with the lighting to create the atmosphere I wanted.
             </p>
             <div class="pidiv">
                 <img class="projectimg" src="https://peterwhitlock.info/subway.jpg" />
@@ -128,21 +159,25 @@
             </div>
             <div class="spacer"></div>
             <p>
-                In second year, as a group project we developed a FPS game set on a spaceship with temeramental gravity.
-                I focused on a lot of the user interface for this game like the HUD and menus.
+                One <span class="spanalt">group project</span> we did in second year was creating a <span class="spanalt">full game demo</span> from a curated list of genres in either Unity or Unreal.
+                We chose to make an FPS game with Unreal set in a malfunctioning spaceship using artificial gravity to create an interesting game mechanic.
+            </p>
+            <p>
+                I volunteered to <span class="spanalt">work on a lot of the UI</span> like the HUD and in game menus as well as other graphic design elements.
+                If I get the opportunity to, I'd love to do something like this as a job as I really enjoyed the process.
             </p>
             <div class="pidiv">
                 <img class="projectimg" src="https://peterwhitlock.info/start_unreal.jpg" />
                 <img class="projectimg" src="https://peterwhitlock.info/unreal_options.jpg" />
             </div>
         </div>
-        <div class="segment blue" id="design">
+        <div class="segment" id="design">
             <h2>
                 ART & DESIGN
             </h2>
             <p>
-                As part of my games design course we were taught 3D modelling with Maya and Substance.
-                In my first and second years I modelled an electic car charging station and Stitch from lilo & stitch.
+                During my course I had the opportunity to try a range of other more artistic units where we focused on <span>modelling,
+                textures, animation</span>, and even narrative story telling. Below are some examples of the types of 3D models I created <span>using Maya</span>.
             </p>
             <div class="pidiv">
                 <img class="projectimg" src="https://peterwhitlock.info/stitch.jpg" />
@@ -150,8 +185,9 @@
             </div>
             <div class="spacer"></div>
             <p>
-                In my space time I enjoy designing graphics for myself and my friends.
-                Something I did more recently was create a logo and banner art for a 3D printing etsy page called Print Play Perform.
+                Outside of games design I enjoy drawing, either digitally or with pencil and paper.
+                However, more regularly I'm <span>designing graphics</span> using vector software as a part of projects <span>for myself and my friends</span>.
+                Something I did recently was create a logo and banner art for a 3D printing Etsy page called PrintPlayPerform.
             </p>
             <img class="projectimg" src="https://peterwhitlock.info/ppp.jpg" />
             <img class="projectimg" src="https://peterwhitlock.info/ppp_street.jpg" />
@@ -160,37 +196,60 @@
                 <img class="projectimg" src="https://peterwhitlock.info/bluesaloon.jpg" />
                 <img class="projectimg" src="https://peterwhitlock.info/badlyexplained.jpg" />
             </div>
+            <p>
+                My 2D design skills are constantly evolving as I continue to teach myself in my space time.
+                I'd love to be able to incorporate vector art and design in my job.
+            </p>
         </div>
         <div class="segment grey" id="web">
             <h2>
                 WEB DEVELOPMENT & MORE
             </h2>
             <p>
-                Since first year where we had to code a website, I've enjoyed practising my web design skills in my own time.
-                I created this website for my portfolio from scratch using HTML & CSS and have made a couple similar websites for projects with friends.
+                A unit we had in my first year introduced me to web design and since then I have been steadily <span>developing
+                my abilities with HTML and CSS</span> in my free time. I set myself the task of <span>creating this portfolio website</span> from scratch
+                as an example of my knowledge. Because <span>I am using GitHub's</span> free hosting service,
+                I can't run JavaScript so I've needed to be smart with how I use CSS to create functionality and compatibility with a large range of devices.
             </p>
             <p>
-                As part of my course I also got a chance to learn other useful skills in the games industry such as telemetry data analysis using python,
-                or using twine to make narritive focused text based games.
+                As I am still learning there may be some issues with this site so any feedback about it would be greatly appreciated
+                as I would love to continue to get better at web development because it's something I have really enjoyed experimenting with.
             </p>
             <p>
-                HTML & CSS, Analytics (Python), Narrative? - This Site (reference Uni unit), Lol Analysis, Hansel & gretle?
+                Unfortunately, I couldn't include all my experience as I have probably already written too much,
+                however I did want to include a few other skills that may be relevant to an employer. As part of a third year course
+                we used <span>Python and Pandas to analysis telemetry data</span> from League of Legends which built on my prior knowledge of Python.
+                Recently, I have been using <span>C++ to code a robotics project</span> I've started with my partner: and finally,
+                I have experience using CAD software from my previous, unfinished, university product design course.
             </p>
         </div>
-        <div class="segment" id="contacts">
-            <h2>
-                CONTACT ME
-            </h2>
-            <p>
-                Please feel free to contact me at any of the following places.
-                pwhitlock0279@gmail.com, 07375143381, linkedin.com/in/peterwhitlock
-            </p>
+        <div class="blue">
+            <div class="segment blue" id="contacts">
+                <h2>
+                    CONTACT ME
+                </h2>
+                <p>
+                    <span class="spanalt">Thank you</span> again for your interest in me and my work. If you would like to ask any questions or contact me about anything else
+                    please feel free to use any of the following methods. If you want the quickest response,
+                    I would recommend email as I check it often and aren't always available to answer the phone but please leave a voicemail
+                    and I'll get back to you as soon as I can.
+                </p>
+                <a class="link" href="https://www.linkedin.com/in/peterwhitlock">
+                    <span class="spanalt">linkedin.com/in/peterwhitlock</span>
+                </a>
+                <p>
+                    <span class="spanalt">pwhitlock0279@gmail.com</span>
+                </p>
+                <p>
+                    <span class="spanalt">07375143381</span>
+                </p>
+            </div>
+            <div id="footer">
+                <a class="link" href="#header">
+                    <img id="arrow" src="https://peterwhitlock.info/up_arrow.jpg" alt="return to top" />
+                </a>
+            </div>
         </div>
-    </div>
-    <div id="footer">
-        <a class="link" href="#header">
-            <img id="arrow" src="https://peterwhitlock.info/up_arrow.png" alt="return to top" />
-        </a>
     </div>
 </body>
 </html>
@@ -203,7 +262,6 @@
 
 <style>
     body {
-        background: white;
         margin: 0;
     }
 
@@ -221,6 +279,15 @@
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-size: 4vw;
         margin: 0 0 2rem 0;
+    }
+
+    span {
+        font-weight: bold;
+        font-size: large;
+        color: #80bcee;
+    }
+    .spanalt {
+        color: #50208f;
     }
 
 
@@ -260,11 +327,12 @@
         border: none;
         cursor: pointer;
         font-size: medium;
-        color: black;
+        color: white;
         padding: 0.25rem;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
     .link:hover {
-        color: grey;
+        color: lightgrey;
     }
 
     .ddlink:hover + .ddmenu {
@@ -287,7 +355,9 @@
     }
 
     .blue {
-        background: #30bced;
+        background: -webkit-linear-gradient(to top right, #8e9bff, #30bced);
+        background: linear-gradient(to top right, #8e9bff, #30bced);
+        color: white;
     }
     .grey {
         background: #303036;
